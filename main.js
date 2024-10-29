@@ -40,12 +40,16 @@ palpites.textContent += palpiteUsuario + " ";
 
 envioPalpite.addEventListener('click', verificarPalpite)
 
+
 function finalizarJogo() {
     campoPalpite.disabled = true;
     envioPalpite.disabled = true;
     botaoReiniciar = document.createElement('button');
     document.body.appendChild(botaoReiniciar);
-    botaoReiniciar.addEventListener('click', reiniciarJogo)
+    botaoReiniciar.textContent = "Reinicar Jogo";
+    botaoReiniciar.classList.add('botaoReiniciar');
+    document.body.appendChild(botaoReiniciar);
+    botaoReiniciar.addEventListener('click, reiniciarJogo);
 }
 
 
